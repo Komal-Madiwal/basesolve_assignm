@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Reverse Complement Tool</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h2>Upload CSV File</h2>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    {% if header %}
+        <h3>Header</h3>
+        <pre>{{ header }}</pre>
+    {% endif %}
+
+    {% if reads %}
+        <h3>Reads</h3>
+        <pre>{{ reads }}</pre>
+    {% endif %}
+
+    {% if settings %}
+        <h3>Settings</h3>
+        <pre>{{ settings }}</pre>
+    {% endif %}
+
+    {% if tables %}
+        <h3>Data</h3>
+        <div id="data-table">
+            {{ tables | safe }}
+        </div>
+        <br>
+        <button id="reverse-btn">Reverse Complement index2</button>
+        <a href="/download"><button>Download Modified CSV</button></a>
+    {% endif %}
+
+    <script>
+        $("#reverse-btn").click(function () {
+            $.post("/reverse_complement", function (data) {
+                $("#data-table").html(data);
+            });
+        });
+    </script>
+</body>
+</html>
