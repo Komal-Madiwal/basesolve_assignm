@@ -1,4 +1,4 @@
-# Web App for downloading reserve complemented csv 
+# Web App for downloading reverse complemented csv 
 
 This is a simple Flask web application that allows users to upload a CSV file, extract different sections (Header, Reads, Settings, and Data), process the `index2` column to get the reverse complement, and download the modified CSV.
 
