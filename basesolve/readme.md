@@ -36,22 +36,22 @@ Click "Choose File" and select a CSV file.
 Click "Upload."
 example:- 
 
-![Upload CSV](screenshot/upload_csvfile.PNG)
+![Upload CSV](screenshot/upload_csv_file_ss.PNG)
 
 2 View Extracted Sections
 After uploading, the app will display [Header], [Reads], [Settings], and [Data] sections.
-![Extracted Sections](screenshot/extract_header.PNG)
+![Extracted Sections](screenshot/extracted_header.PNG)
 
 
 3️.Reverse Complement the index2 Column
 Click the "Reverse Complement index2" button.
 The modified table will be displayed.
 Example Screenshot:
-![reverse_complement](screenshot/reverse_complement_button.PNG)
+![reverse_complement](screenshot/reverse_comp_button.PNG)
 
 4️.Download the Modified CSV
 After processing, click the "Download Modified CSV" button.
 Example Screenshot:
-![download_modified_csv](screenshot/modified_csvfile.PNG)
+![download_modified_csv](screenshot/reverse_comp_file.PNG)
 
 
