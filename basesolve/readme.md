@@ -52,6 +52,6 @@ Example Screenshot:
 4️.Download the Modified CSV
 After processing, click the "Download Modified CSV" button.
 Example Screenshot:
-![download_modified_csv](screenshot/reverse_comp_file.PNG)
+![download_modified_csv](screenshot/reverse.PNG)
 
 
