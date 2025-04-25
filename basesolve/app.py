@@ -78,7 +78,7 @@ def reverse_complement_column():
     df["index2"] = df["index2"].apply(reverse_complement)
 
     # Save modified CSV
-    modified_filepath = os.path.join(UPLOAD_FOLDER, "modified.csv")
+    modified_filepath = os.path.join(UPLOAD_FOLDER, "modified_reverse_complement.csv")
     df.to_csv(modified_filepath, index=False)
 
     return df.to_html(index=False)  # Return updated table to display in HTML
@@ -91,4 +91,4 @@ def download_file():
     return "Error: No modified file found."
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=5001)
